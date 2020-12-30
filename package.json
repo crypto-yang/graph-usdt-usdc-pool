@@ -1,0 +1,16 @@
+{
+  "name": "test-graph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ crypto-yang/test-graph",
+    "create-local": "graph create --node http://localhost:8020/ crypto-yang/test-graph",
+    "remove-local": "graph remove --node http://localhost:8020/ crypto-yang/test-graph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 crypto-yang/test-graph"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.19.0",
+    "@graphprotocol/graph-ts": "0.19.0"
+  }
+}
