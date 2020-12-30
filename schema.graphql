@@ -1,6 +1,10 @@
-type ExampleEntity @entity {
+type TransferEntity @entity {
   id: ID!
-  count: BigInt!
-  owner: Bytes! # address
-  spender: Bytes! # address
+  from: Bytes!
+  to: Bytes!
+  blockNumber: BigInt!
+  rawAmount: BigDecimal!
+  rawBalanceOf: BigDecimal!
+  contractAddress: Bytes!
+  amount: BigDecimal!
 }
